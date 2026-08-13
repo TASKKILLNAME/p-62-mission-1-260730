@@ -1,5 +1,9 @@
 package com.back.practicejsb;
 
+import com.back.practicejsb.domain.post.answer.entity.Answer;
+import com.back.practicejsb.domain.post.answer.repository.AnswerRepository;
+import com.back.practicejsb.domain.post.question.entity.Question;
+import com.back.practicejsb.domain.post.question.repository.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,5 +1,6 @@
-package com.back.practicejsb;
+package com.back.practicejsb.domain.post.question.repository;
 
+import com.back.practicejsb.domain.post.question.entity.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

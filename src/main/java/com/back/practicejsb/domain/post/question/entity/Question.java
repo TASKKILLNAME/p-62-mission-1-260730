@@ -1,9 +1,11 @@
-package com.back.practicejsb;
+package com.back.practicejsb.domain.post.question.entity;
 
+import com.back.practicejsb.domain.post.answer.entity.Answer;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -12,6 +14,7 @@ import java.util.List;
 @Entity
 // @Setter 사용은 지양, 대신 생성자 사용
 @RequiredArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

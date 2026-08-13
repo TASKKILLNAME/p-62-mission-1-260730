@@ -1,5 +1,6 @@
-package com.back.practicejsb;
+package com.back.practicejsb.domain.post.answer.entity;
 
+import com.back.practicejsb.domain.post.question.entity.Question;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
