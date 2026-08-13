@@ -33,4 +33,9 @@ public class Question {
         this.subject = subject;
         this.content = content;
     }
+
+    public void update(Question question, String subject, String content) {
+        question.subject = subject;
+        question.content = content;
+    }
 }
