@@ -25,7 +25,7 @@ public class Answer {
     @ManyToOne // Question <-> Answer 외래키 (외래키는 부모-자식 관계에서 자식에 생성)
     private Question question;
 
-    public Answer(String content, Question qustion) {
+    public Answer(String content, Question question) {
         this.content = content;
         this.question = question;
     }
