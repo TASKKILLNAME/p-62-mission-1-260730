@@ -27,4 +27,10 @@ public class QuestionService {
             throw new DataNotFoundException("question not found");
         }
     }
+
+    public void create(String subject, String content) {
+        Question q = new Question(subject, content);
+        questionRepository.save(q);
+    }
+
 }
